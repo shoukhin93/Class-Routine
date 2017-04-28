@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Add"/>
+    
+     
+       <item
+        android:id="@+id/clearalldata"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Clear All Data"/>
+    
+     <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="About"/>
+     
+      <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Exit"/>
+     
+
+</menu>
