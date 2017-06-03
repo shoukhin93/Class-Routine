@@ -1599,14 +1599,15 @@
         <item>Edit</item>
         <item>Delete</item>
         </string-array></file><file path="E:\Android\Android Studio\Class-Routine(File)\app\src\main\res\values\strings.xml" qualifiers=""><string name="hello_world">Hello world!</string><string name="action_settings">Settings</string><string-array name="semesters">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
+        <item>Please Select a semester</item>
+        <item>1st year 1st semester</item>
+        <item>1st year 2nd semester</item>
+        <item>2nd year 1st semester</item>
+        <item>2nd year 2nd semester</item>
+        <item>3rd year 1st semester</item>
+        <item>3rd year 2nd semester</item>
+        <item>4th year 1st semester</item>
+        <item>4th year 2nd semester</item>
     </string-array><string name="app_name">Class Routine</string></file><file path="E:\Android\Android Studio\Class-Routine(File)\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorButtonNormal">@color/colorAccent</item>
         

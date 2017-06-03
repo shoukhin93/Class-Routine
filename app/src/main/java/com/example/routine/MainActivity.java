@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     int MIN = 0;
     int POS = 0;
 
+    private static String selectedSemester;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         initialize();
 
         // Initial Routine
-        InitialRoutine();
+        //InitialRoutine();
 
         // Reading files and adding to list view
         Calculation.context = this;
@@ -198,6 +201,11 @@ public class MainActivity extends AppCompatActivity {
         back = (Button) findViewById(R.id.mainbuttonback);
         next = (Button) findViewById(R.id.mainbuttonnext);
         arrayList = new ArrayList<>();
+
+        //get the selected semester
+        selectedSemester = getIntent().getExtras().getString("selected_semester");
+        Log.d(Home.LOGTAG, "selected semester : " + selectedSemester);
+
 
         // Adapter to view data in listview
         adapter = new BaseAdapter() {
