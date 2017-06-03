@@ -5,50 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="356017283062364"
+    timestamp="367070857130744"
     token="6772165285119584624"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2267" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="751" />
     <task
         name="verifier"
-        duration="0" />
+        duration="49" />
 
     <artifact
-        location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="E:\Android\Android Studio\Class-Routine(File)\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="354341416688049"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="367070857130744"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="E:\Android\Android Studio\Class-Routine(File)\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="355564617029517"
-        verifier="FIELD_REMOVED" >
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="356017283062364"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>
