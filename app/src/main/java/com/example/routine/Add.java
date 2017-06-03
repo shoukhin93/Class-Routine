@@ -95,8 +95,6 @@ public class Add extends AppCompatActivity {
 						fis.write(Calculation.dayFileContents[POS].getBytes());
 						fis.close();
 
-					} catch (FileNotFoundException e) {
-						e.printStackTrace();
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -150,7 +148,7 @@ public class Add extends AppCompatActivity {
 		classFrom = getIntent().getStringExtra("from");
 		classTo = getIntent().getStringExtra("to");
 		POS = getIntent().getIntExtra("position", 0);
-		FILE_NAME = Calculation.day[POS];
+		FILE_NAME = Calculation.day[POS]+ MainActivity.selectedSemester;
 
 		subject.setText(subjectName);
 		teacher.setText(teacherName);

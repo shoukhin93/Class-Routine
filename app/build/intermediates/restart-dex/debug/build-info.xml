@@ -5,22 +5,22 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="368494137770877"
+    timestamp="368970816300438"
     token="6772165285119584624"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="324" />
+        duration="384" />
     <task
         name="instant-run-dex"
-        duration="390" />
+        duration="684" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="112" />
     <task
         name="verifier"
-        duration="2" />
+        duration="57" />
 
     <artifact
         location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\reload-dex\debug\classes.dex"
@@ -34,31 +34,14 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="368166729858731"
-        verifier="FIELD_ADDED" >
+        timestamp="368786524892354"
+        verifier="FIELD_TYPE_CHANGE" >
         <artifact
             location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="368403412678515"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\builds\debug\368403412678515\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="368452566296980"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\builds\debug\368452566296980\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="368494137770877"
+        timestamp="368970816300438"
         verifier="COMPATIBLE" >
         <artifact
             location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\reload-dex\debug\classes.dex"

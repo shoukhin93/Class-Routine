@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     int MIN = 0;
     int POS = 0;
 
-    private static String selectedSemester;
+    public static String selectedSemester;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
         //get the selected semester
         selectedSemester = getIntent().getExtras().getString("selected_semester");
-        Log.d(Home.LOGTAG, "selected semester : " + selectedSemester);
+        //Log.d(Home.LOGTAG, "selected semester : " + selectedSemester);
 
 
         // Adapter to view data in listview

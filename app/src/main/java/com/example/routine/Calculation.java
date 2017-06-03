@@ -27,7 +27,7 @@ public class Calculation {
         for (int i = 0; i < day.length; i++) {
             try {
                 dayFileContents[i] = "";
-                FileInputStream fis = context.openFileInput(day[i]);
+                FileInputStream fis = context.openFileInput(day[i] + MainActivity.selectedSemester);
                 BufferedInputStream bis = new BufferedInputStream(fis);
 
                 while (bis.available() != 0) {
@@ -36,9 +36,6 @@ public class Calculation {
                 }
                 bis.close();
                 fis.close();
-            } catch (FileNotFoundException e) {
-
-                e.printStackTrace();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -73,12 +70,10 @@ public class Calculation {
         //Toast.makeText(context, content +"\n" + fileToWrite , Toast.LENGTH_LONG).show();
 
         try {
-            FileOutputStream fos = context.openFileOutput(day[position], 0);
+            FileOutputStream fos = context.openFileOutput(day[position] + MainActivity.selectedSemester, 0);
             fos.write(fileToWrite.getBytes());
             fos.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -117,11 +112,8 @@ public class Calculation {
 
         for (int i = 0; i < day.length; i++) {
             try {
-                FileOutputStream fos = context.openFileOutput(day[i], 0);
+                FileOutputStream fos = context.openFileOutput(day[i] + MainActivity.selectedSemester, 0);
                 fos.close();
-            } catch (FileNotFoundException e) {
-
-                e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
