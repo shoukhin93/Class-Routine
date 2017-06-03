@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.routine"
-    android:versionCode="7"
-    android:versionName="2.6" >
+    android:versionCode="8"
+    android:versionName="2.7" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
 
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
-        android:debuggable="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.routine.MainActivity"
@@ -28,6 +32,9 @@
         <activity
             android:name="com.example.routine.Add"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.routine.MainActivity" />
         </activity>
         <activity
             android:name="com.example.routine.About"
