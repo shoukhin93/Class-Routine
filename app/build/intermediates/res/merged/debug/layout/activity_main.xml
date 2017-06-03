@@ -1,52 +1,42 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/mainroutinefortbx"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Showing Class Schedule For :"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    </LinearLayout>
-
-    <LinearLayout android:id="@+id/liniarlaout0"
+        android:id="@+id/liniarlaout0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingBottom="20dp" >
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
 
         <Button
             android:id="@+id/mainbuttonback"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:background="@drawable/back2" />
 
         <TextView
             android:id="@+id/t"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
             android:gravity="center"
-            android:text="@string/hello_world" />
+            android:text="@string/hello_world"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/mainbuttonnext"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:background="@drawable/next2" />
 
     </LinearLayout>
@@ -54,7 +44,6 @@
     <ListView
         android:id="@+id/mainlistview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
