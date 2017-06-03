@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add.xml",
+        "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\add.xml"
+    },
+    {
+        "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview.xml",
+        "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\listview.xml"
+    },
+    {
+        "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

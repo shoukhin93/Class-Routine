@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Android\Android Studio\Class-Routine(File) Android Studio\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a56cd4f1986a138aec267a562a1a7143c2bb310d">
+        <dex dex="E:\Android\Android Studio\Class-Routine(File) Android Studio\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0c406fb9bbd4cc7f89567f3b1022bdba10447ba2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Android Studio\Class-Routine(File) Android Studio\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7983556a47d7c92687da7d8253d8aba45a071c21">
+        <dex dex="E:\Android\Android Studio\Class-Routine(File) Android Studio\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_64cc6fd6f92eb9f7a1388ddb431756b7275f06af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7f0681cfdf2e05631edf292bd4da17a29df71d81">
+        <dex dex="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_11025006af5f79e3c80a7eb1622387f6a9d7769e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d03a6a6009ad3a5fcbac7dd70b990a6d3b21b67b">
+        <dex dex="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_777dcbe436e7e391889fb662e79bcd9fbe5b7a35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Software\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="E:\Android\Android Studio\Class-Routine(File) Android Studio\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_7b9e7091aff892822bc8ae41a9f60c75d3850196\classes.dex" />
+    </item>
+
+</items>
