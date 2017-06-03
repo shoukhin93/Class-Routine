@@ -1848,7 +1848,6 @@ containing a value of this type.
         public static final int notify_panel_notification_icon_bg=0x7f020061;
     }
     public static final class id {
-        public static final int about=0x7f0b0081;
         public static final int action0=0x7f0b006c;
         public static final int action_bar=0x7f0b0047;
         public static final int action_bar_activity_content=0x7f0b0000;
@@ -1898,7 +1897,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0b0049;
         public static final int end=0x7f0b001b;
         public static final int end_padder=0x7f0b007f;
-        public static final int exit=0x7f0b0082;
+        public static final int exit=0x7f0b0081;
         public static final int expand_activities_button=0x7f0b0028;
         public static final int expanded_menu=0x7f0b003d;
         public static final int home=0x7f0b0004;
