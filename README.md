@@ -3,7 +3,7 @@
 **Offline class routine storing application for android.**
 
 ## Installation
-It's an android eclips project. download eclips and add android plugins and then import the project to run.
+Import the project with android studio 2.2 or higher and run.
 
 ## Features
 1. Offline routine storing
