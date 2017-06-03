@@ -44,6 +44,10 @@
         "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\about.xml"
     },
     {
+        "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
         "merged": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "E:\\Android\\Android Studio\\Class-Routine(File)\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
