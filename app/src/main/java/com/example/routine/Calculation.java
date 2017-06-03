@@ -12,123 +12,119 @@ import android.widget.Toast;
 
 public class Calculation {
 
-	public static String[] day = { "Saturday", "Sunday", "Monday", "Tuesday",
-			"Wednesday", "Thursday", "Friday" };
-	public static Context context;
+    public static String[] day = {"Saturday", "Sunday", "Monday", "Tuesday",
+            "Wednesday", "Thursday", "Friday"};
+    public static Context context;
 
-	public static String[] dayFileContents = new String[8];
+    public static String[] dayFileContents = new String[8];
 
-	public Calculation(Context context) {
-		super();
-		Calculation.context = context;
-	}
+    public Calculation(Context context) {
+        super();
+        Calculation.context = context;
+    }
 
-	public static void fileRead() {
+    public static void fileRead() {
+        for (int i = 0; i < day.length; i++) {
+            try {
+                dayFileContents[i] = "";
+                FileInputStream fis = context.openFileInput(day[i]);
+                BufferedInputStream bis = new BufferedInputStream(fis);
 
-		for (int i = 0; i < day.length; i++) {
-			try {
-				dayFileContents[i] = "";
-				FileInputStream fis = context.openFileInput(day[i]);
-				BufferedInputStream bis = new BufferedInputStream(fis);
+                while (bis.available() != 0) {
+                    char c = (char) bis.read();
+                    dayFileContents[i] += c;
+                }
+                bis.close();
+                fis.close();
+            } catch (FileNotFoundException e) {
 
-				while (bis.available() != 0) {
-					char c = (char) bis.read();
-					dayFileContents[i] += c;
-				}
-				bis.close();
-				fis.close();
+                e.printStackTrace();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
 
-			} catch (FileNotFoundException e) {
+    public static void fileDelete(int position, String content) {
 
-				e.printStackTrace();
-			} catch (IOException e1) {
-				
-				e1.printStackTrace();
-			}
-		}
+        int c = 0;
+        int l = dayFileContents[position].length();
 
-	}
+        String temp = "", fileToWrite = "";
 
-	public static void fileDelete(int position, String content) {
+        for (int i = 0; i < l; i++) {
+            if (dayFileContents[position].charAt(i) == '*') {
+                c++;
+            }
+            if (c == 4) {
+                c = 0;
+                temp += "*";
+                if (temp.equals(content)) {
+                    temp = "";
+                    continue;
+                } else
+                    fileToWrite += temp;
+                temp = "";
 
-		int c = 0;
-		int l = dayFileContents[position].length();
+            } else
+                temp += dayFileContents[position].charAt(i);
 
-		String temp = "", fileToWrite = "";
+        }
+        //Toast.makeText(context, content +"\n" + fileToWrite , Toast.LENGTH_LONG).show();
 
-		for (int i = 0; i < l; i++) {
-			if (dayFileContents[position].charAt(i) == '*') {
-				c++;
-			}
-			if (c == 4) {
-				c = 0;
-				temp += "*";
-				if (temp.equals(content)) {
-					temp = "";
-					continue;
-				} else
-					fileToWrite += temp;
-				temp = "";
+        try {
+            FileOutputStream fos = context.openFileOutput(day[position], 0);
+            fos.write(fileToWrite.getBytes());
+            fos.close();
 
-			} else
-				temp += dayFileContents[position].charAt(i);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-		}
-		//Toast.makeText(context, content +"\n" + fileToWrite , Toast.LENGTH_LONG).show();
+    }
 
-		try {
-			FileOutputStream fos = context.openFileOutput(day[position], 0);
-			fos.write(fileToWrite.getBytes());
-			fos.close();
+    public static void fileEdit(int position, String content) {
+        int c = 0;
+        String temp = "", modifiedFile = "";
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        for (int i = 0; i < dayFileContents[position].length(); i++) {
+            if (dayFileContents[position].charAt(i) == '*') {
+                c++;
+            }
 
-	}
+            if (c == 4) {
+                c = 0;
+                temp += "*";
 
-	public static void fileEdit(int position, String content) {
-		int c = 0;
-		String temp = "", modifiedFile = "";
+                if (temp.equals(content)) {
 
-		for (int i = 0; i < dayFileContents[position].length(); i++) {
-			if (dayFileContents[position].charAt(i) == '*') {
-				c++;
-			}
+                    temp = "";
+                    continue;
+                } else
+                    modifiedFile += temp;
+                temp = "";
 
-			if (c == 4) {
-				c = 0;
-				temp += "*";
+            } else
+                temp += dayFileContents[position].charAt(i);
+        }
 
-				if (temp.equals(content)) {
+        dayFileContents[position] = modifiedFile;
+    }
 
-					temp = "";
-					continue;
-				} else
-					modifiedFile += temp;
-				temp = "";
+    public static void clearAllData() {
 
-			} else
-				temp += dayFileContents[position].charAt(i);
-		}
+        for (int i = 0; i < day.length; i++) {
+            try {
+                FileOutputStream fos = context.openFileOutput(day[i], 0);
+                fos.close();
+            } catch (FileNotFoundException e) {
 
-		dayFileContents[position] = modifiedFile;
-	}
-
-	public static void clearAllData() {
-
-		for (int i = 0; i < day.length; i++) {
-			try {
-				FileOutputStream fos = context.openFileOutput(day[i], 0);
-				fos.close();
-			} catch (FileNotFoundException e) {
-
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-	}
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
