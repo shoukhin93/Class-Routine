@@ -19,9 +19,9 @@
         <Button
             android:id="@+id/mainbuttonback"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
-            android:background="@drawable/back2" />
+            android:background="@drawable/arrow_left" />
 
         <TextView
             android:id="@+id/t"
@@ -35,9 +35,9 @@
         <Button
             android:id="@+id/mainbuttonnext"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
-            android:background="@drawable/next2" />
+            android:background="@drawable/arrow_right" />
 
     </LinearLayout>
 

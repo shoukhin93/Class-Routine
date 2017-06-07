@@ -37,7 +37,9 @@
         <activity
             android:name="com.example.routine.About"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.routine.Home" >
+        <activity
+            android:name="com.example.routine.Home"
+            android:label="Please Select Your Semester" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

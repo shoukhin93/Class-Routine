@@ -154,7 +154,7 @@ public class Add extends AppCompatActivity {
 		teacher.setText(teacherName);
 		from.setText(classFrom);
 		to.setText(classTo);
-		addingDay.setText("Saving Routine At: " + FILE_NAME);
+		addingDay.setText("Saving Routine At: " + Calculation.day[POS]);
 
 		// If Edit is clicked, Saving The Modified version To An Array But Not
 		// In File
