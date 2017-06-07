@@ -368,9 +368,6 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.clearalldata) {
             clearAllData();
         }
-        else if (item.getItemId() == R.id.exit) {
-            this.finish();
-        }
         return super.onOptionsItemSelected(item);
     }
 
