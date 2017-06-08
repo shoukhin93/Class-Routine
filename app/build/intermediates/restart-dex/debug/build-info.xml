@@ -5,46 +5,39 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="710001483802332"
+    timestamp="772212043243612"
     token="6772165285119584624"
-    verifier="R_CLASS_CHANGE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="868" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="183" />
+        duration="0" />
     <task
         name="verifier"
-        duration="41" />
-
-    <artifact
-        location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
+        duration="0" />
 
     <build
-        timestamp="709614593132965"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+        timestamp="771780053673754"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="E:\Android\Android Studio\Class-Routine(File)\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="710001483802332"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="772183169470514"
+        verifier="COMPATIBLE" >
         <artifact
             location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
             type="RESOURCES" />
-        <artifact
-            location="E:\Android\Android Studio\Class-Routine(File)\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
     </build>
+    <build
+        timestamp="772212043243612"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

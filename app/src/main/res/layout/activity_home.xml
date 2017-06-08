@@ -9,99 +9,214 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.routine.Home">
 
-    <Button
-        android:layout_marginTop="10dp"
-        android:id="@+id/button1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_1"
-        android:text="1st Year 1st Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="4"
+            android:background="@drawable/button_1"
+            android:text="1st Year 1st Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_2"
-        android:text="1st Year 2nd Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_3"
-        android:text="2nd Year 1st Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_4"
-        android:text="2nd Year 2nd Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_1"
-        android:text="3rd Year 1st Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_2"
-        android:text="3rd Year 2nd Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_2"
+            android:text="1st Year 2nd Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/button_3"
-        android:text="4th Year 1st Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@drawable/button_4"
-        android:text="4th Year 2nd Semester"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_3"
+            android:text="2nd Year 1st Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_4"
+            android:text="2nd Year 2nd Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_1"
+            android:text="3rd Year 1st Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="4"
+            android:background="@drawable/button_2"
+            android:text="3rd Year 2nd Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="4"
+            android:background="@drawable/button_3"
+            android:text="4th Year 1st Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/button_4"
+            android:text="4th Year 2nd Semester"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
